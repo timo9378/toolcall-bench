@@ -41,10 +41,13 @@ Sorted by native score:
 |---|---|---|
 | qwen3.5:4b | **25/25** | 22/25 |
 | qwen3.5:9b | **25/25** | 25/25 |
+| granite4.1:8b | 24/25 | 24/25 |
+| ministral-3:8b | 24/25 | 24/25 |
 | granite4:tiny-h | 22/25 | 12/25 |
 | lfm2.5:8b | 22/25 | 5/25 |
 | mistral-nemo | 22/25 | 25/25 |
 | nemotron-3-nano:4b | 21/25 | 23/25 |
+| qwen3.6:27b | 21/25 | 23/25 |
 | gemma4:e4b | 20/25 | 24/25 |
 | gemma4:e2b | 19/25 | 18/25 |
 | gemma4:12b | 18/25 | 20/25 |
@@ -71,6 +74,9 @@ Things the table shows at a glance:
   (4/25) but speaks clean JSON when asked (23/25).
 - **HTML-in-JSON is a real discriminator**: the whole gemma family scores 0/4
   on it, qwen3.5 scores 4/4.
+- **Newer-but-bigger loses to smaller-but-newer on consumer hardware**:
+  qwen3.6:27b (17 GB, partially CPU-offloaded on a 16 GB card, ~10× slower)
+  scores 21/25 — below qwen3.5:4b's 25/25 at 3.4 GB fully in VRAM.
 
 Caveats: 25 cases, single run, default quants — this is a smoke test for
 product decisions, not a paper. The interesting signals (0/25 vs 25/25) are far
