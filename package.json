@@ -1,0 +1,16 @@
+{
+  "name": "toolcall-bench",
+  "version": "1.0.0",
+  "description": "25-case tool-calling smoke test for local LLMs on Ollama: native tools API vs. a prompt+repair shim",
+  "scripts": {
+    "bench": "node bench.mjs"
+  },
+  "keywords": [],
+  "author": "timo9378",
+  "license": "MIT",
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "jsonrepair": "^3.14.0"
+  }
+}

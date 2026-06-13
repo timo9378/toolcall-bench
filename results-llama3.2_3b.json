@@ -1,0 +1,182 @@
+{
+  "model": "llama3.2:3b",
+  "native": {
+    "simple-1": {
+      "pass": true
+    },
+    "simple-2": {
+      "pass": true
+    },
+    "simple-3": {
+      "pass": false,
+      "reason": "schema: data/query must be string"
+    },
+    "simple-4": {
+      "pass": true
+    },
+    "simple-5": {
+      "pass": false,
+      "reason": "content check failed: {\"sql\":\"{\\\"type\\\":\\\"string\\\"}\",\"object\":\"{\\\"id\\\": \\\"signups\\\", \\\"created_at\\\": \\\"created_at\\\"}\",\"database\":\"analytics\"}"
+    },
+    "complex-1": {
+      "pass": false,
+      "reason": "schema: data/durationMinutes must be integer"
+    },
+    "complex-2": {
+      "pass": false,
+      "reason": "schema: data/durationMinutes must be integer"
+    },
+    "complex-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-4": {
+      "pass": false,
+      "reason": "schema: data/operations must be array"
+    },
+    "complex-5": {
+      "pass": true
+    },
+    "html-1": {
+      "pass": false,
+      "reason": "schema: data/operations must be array"
+    },
+    "html-2": {
+      "pass": false,
+      "reason": "schema: data/operations must be array"
+    },
+    "html-3": {
+      "pass": false,
+      "reason": "schema: data/operations must be array"
+    },
+    "html-4": {
+      "pass": false,
+      "reason": "schema: data/operations must be array"
+    },
+    "parallel-1": {
+      "pass": false,
+      "reason": "expected 2 calls, got 1"
+    },
+    "parallel-2": {
+      "pass": true
+    },
+    "parallel-3": {
+      "pass": true
+    },
+    "nocall-1": {
+      "pass": false,
+      "reason": "eager call: get_weather"
+    },
+    "nocall-2": {
+      "pass": false,
+      "reason": "eager call: send_email"
+    },
+    "nocall-3": {
+      "pass": false,
+      "reason": "eager call: run_sql"
+    },
+    "nocall-4": {
+      "pass": false,
+      "reason": "eager call: create_event"
+    },
+    "select-1": {
+      "pass": true
+    },
+    "select-2": {
+      "pass": true
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "schema: data/attendees must be array"
+    },
+    "select-4": {
+      "pass": true
+    }
+  },
+  "shim": {
+    "simple-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-3": {
+      "pass": true
+    },
+    "simple-4": {
+      "pass": true
+    },
+    "simple-5": {
+      "pass": true
+    },
+    "complex-1": {
+      "pass": false,
+      "reason": "unparseable after retry: Colon expected at position 190"
+    },
+    "complex-2": {
+      "pass": true
+    },
+    "complex-3": {
+      "pass": false,
+      "reason": "schema: data/attendees/1 must have required property 'email'"
+    },
+    "complex-4": {
+      "pass": true
+    },
+    "complex-5": {
+      "pass": true
+    },
+    "html-1": {
+      "pass": true
+    },
+    "html-2": {
+      "pass": true
+    },
+    "html-3": {
+      "pass": true
+    },
+    "html-4": {
+      "pass": false,
+      "reason": "unparseable after retry: Colon expected at position 189"
+    },
+    "parallel-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "parallel-2": {
+      "pass": false,
+      "reason": "expected 2 calls, got 1"
+    },
+    "parallel-3": {
+      "pass": true
+    },
+    "nocall-1": {
+      "pass": true
+    },
+    "nocall-2": {
+      "pass": true
+    },
+    "nocall-3": {
+      "pass": true
+    },
+    "nocall-4": {
+      "pass": true
+    },
+    "select-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-3": {
+      "pass": true
+    },
+    "select-4": {
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "model": "functiongemma:270m",
+  "native": {
+    "simple-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-3": {
+      "pass": true
+    },
+    "simple-4": {
+      "pass": false,
+      "reason": "content check failed: {\"body\":\" I was able to watch a comedy performance today\",\"to\":\" bob@example.com\",\" subject\":\" Standup moved\",\"subject\":"
+    },
+    "simple-5": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-1": {
+      "pass": false,
+      "reason": "wrong tool: ,,,,,,,,,,,,,,,,,,"
+    },
+    "complex-2": {
+      "pass": false,
+      "reason": "wrong tool: ,,,,,,,,,,,,,,,,,,"
+    },
+    "complex-3": {
+      "pass": false,
+      "reason": "schema: data/start must be string"
+    },
+    "complex-4": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-5": {
+      "pass": false,
+      "reason": "wrong tool: search_web"
+    },
+    "html-1": {
+      "pass": false,
+      "reason": "schema: data/operations/0 must be object"
+    },
+    "html-2": {
+      "pass": false,
+      "reason": "schema: data/operations/0 must have required property 'id'"
+    },
+    "html-3": {
+      "pass": false,
+      "reason": "schema: data/operations/0 must have required property 'id'"
+    },
+    "html-4": {
+      "pass": false,
+      "reason": "schema: data/operations/0 must have required property 'id'"
+    },
+    "parallel-1": {
+      "pass": false,
+      "reason": "schema: data/unit must be equal to one of the allowed values"
+    },
+    "parallel-2": {
+      "pass": true
+    },
+    "parallel-3": {
+      "pass": true
+    },
+    "nocall-1": {
+      "pass": true
+    },
+    "nocall-2": {
+      "pass": true
+    },
+    "nocall-3": {
+      "pass": true
+    },
+    "nocall-4": {
+      "pass": true
+    },
+    "select-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-4": {
+      "pass": false,
+      "reason": "no tool call"
+    }
+  },
+  "shim": {
+    "simple-1": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "simple-2": {
+      "pass": false,
+      "reason": "schema: data must be object"
+    },
+    "simple-3": {
+      "pass": false,
+      "reason": "schema: data must be object"
+    },
+    "simple-4": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "simple-5": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "complex-1": {
+      "pass": false,
+      "reason": "schema: data must be object"
+    },
+    "complex-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-3": {
+      "pass": false,
+      "reason": "unparseable after retry: no JSON object found"
+    },
+    "complex-4": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-5": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "html-1": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "html-2": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "html-3": {
+      "pass": false,
+      "reason": "schema: data must be object"
+    },
+    "html-4": {
+      "pass": false,
+      "reason": "schema: data must be object"
+    },
+    "parallel-1": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 36"
+    },
+    "parallel-2": {
+      "pass": false,
+      "reason": "expected 2 calls, got 1"
+    },
+    "parallel-3": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "nocall-1": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "nocall-2": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "nocall-3": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "nocall-4": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "select-1": {
+      "pass": false,
+      "reason": "unparseable after retry: no JSON object found"
+    },
+    "select-2": {
+      "pass": false,
+      "reason": "unparseable after retry: Expected ',' or '}' after property value in JSON at position 31"
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "unparseable after retry: no JSON object found"
+    },
+    "select-4": {
+      "pass": false,
+      "reason": "unparseable after retry: no JSON object found"
+    }
+  }
+}

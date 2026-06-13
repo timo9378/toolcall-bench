@@ -1,0 +1,163 @@
+{
+  "model": "nemotron-3-nano:4b",
+  "native": {
+    "simple-1": {
+      "pass": true
+    },
+    "simple-2": {
+      "pass": true
+    },
+    "simple-3": {
+      "pass": true
+    },
+    "simple-4": {
+      "pass": true
+    },
+    "simple-5": {
+      "pass": true
+    },
+    "complex-1": {
+      "pass": true
+    },
+    "complex-2": {
+      "pass": true
+    },
+    "complex-3": {
+      "pass": true
+    },
+    "complex-4": {
+      "pass": true
+    },
+    "complex-5": {
+      "pass": true
+    },
+    "html-1": {
+      "pass": true
+    },
+    "html-2": {
+      "pass": true
+    },
+    "html-3": {
+      "pass": true
+    },
+    "html-4": {
+      "pass": true
+    },
+    "parallel-1": {
+      "pass": false,
+      "reason": "expected 2 calls, got 1"
+    },
+    "parallel-2": {
+      "pass": true
+    },
+    "parallel-3": {
+      "pass": false,
+      "reason": "expected 2 calls, got 1"
+    },
+    "nocall-1": {
+      "pass": true
+    },
+    "nocall-2": {
+      "pass": true
+    },
+    "nocall-3": {
+      "pass": true
+    },
+    "nocall-4": {
+      "pass": true
+    },
+    "select-1": {
+      "pass": true
+    },
+    "select-2": {
+      "pass": false,
+      "reason": "wrong tool: search_web"
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-4": {
+      "pass": true
+    }
+  },
+  "shim": {
+    "simple-1": {
+      "pass": true
+    },
+    "simple-2": {
+      "pass": true
+    },
+    "simple-3": {
+      "pass": true
+    },
+    "simple-4": {
+      "pass": true
+    },
+    "simple-5": {
+      "pass": true
+    },
+    "complex-1": {
+      "pass": true
+    },
+    "complex-2": {
+      "pass": true
+    },
+    "complex-3": {
+      "pass": true
+    },
+    "complex-4": {
+      "pass": true
+    },
+    "complex-5": {
+      "pass": true
+    },
+    "html-1": {
+      "pass": true
+    },
+    "html-2": {
+      "pass": true
+    },
+    "html-3": {
+      "pass": true
+    },
+    "html-4": {
+      "pass": true
+    },
+    "parallel-1": {
+      "pass": true
+    },
+    "parallel-2": {
+      "pass": true
+    },
+    "parallel-3": {
+      "pass": true
+    },
+    "nocall-1": {
+      "pass": true
+    },
+    "nocall-2": {
+      "pass": true
+    },
+    "nocall-3": {
+      "pass": true
+    },
+    "nocall-4": {
+      "pass": false,
+      "reason": "unparseable after retry: no JSON object found"
+    },
+    "select-1": {
+      "pass": true
+    },
+    "select-2": {
+      "pass": true
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-4": {
+      "pass": true
+    }
+  }
+}

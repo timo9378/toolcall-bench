@@ -1,0 +1,180 @@
+{
+  "model": "lfm2.5:8b",
+  "native": {
+    "simple-1": {
+      "pass": true
+    },
+    "simple-2": {
+      "pass": true
+    },
+    "simple-3": {
+      "pass": true
+    },
+    "simple-4": {
+      "pass": true
+    },
+    "simple-5": {
+      "pass": true
+    },
+    "complex-1": {
+      "pass": true
+    },
+    "complex-2": {
+      "pass": true
+    },
+    "complex-3": {
+      "pass": true
+    },
+    "complex-4": {
+      "pass": true
+    },
+    "complex-5": {
+      "pass": true
+    },
+    "html-1": {
+      "pass": true
+    },
+    "html-2": {
+      "pass": true
+    },
+    "html-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "html-4": {
+      "pass": true
+    },
+    "parallel-1": {
+      "pass": true
+    },
+    "parallel-2": {
+      "pass": true
+    },
+    "parallel-3": {
+      "pass": true
+    },
+    "nocall-1": {
+      "pass": true
+    },
+    "nocall-2": {
+      "pass": true
+    },
+    "nocall-3": {
+      "pass": true
+    },
+    "nocall-4": {
+      "pass": true
+    },
+    "select-1": {
+      "pass": true
+    },
+    "select-2": {
+      "pass": false,
+      "reason": "wrong tool: search_web"
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-4": {
+      "pass": true
+    }
+  },
+  "shim": {
+    "simple-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-4": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "simple-5": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-4": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "complex-5": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "html-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "html-2": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "html-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "html-4": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "parallel-1": {
+      "pass": true
+    },
+    "parallel-2": {
+      "pass": false,
+      "reason": "unparseable after retry: no JSON object found"
+    },
+    "parallel-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "nocall-1": {
+      "pass": true
+    },
+    "nocall-2": {
+      "pass": true
+    },
+    "nocall-3": {
+      "pass": true
+    },
+    "nocall-4": {
+      "pass": true
+    },
+    "select-1": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-2": {
+      "pass": false,
+      "reason": "wrong tool: search_web"
+    },
+    "select-3": {
+      "pass": false,
+      "reason": "no tool call"
+    },
+    "select-4": {
+      "pass": false,
+      "reason": "no tool call"
+    }
+  }
+}
